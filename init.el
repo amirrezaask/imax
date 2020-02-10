@@ -8,6 +8,7 @@
 			 yaml-mode
 			 go-mode
 			 doom-themes
+			 markdown-mode
 			 ))
 (setq negev-font-face "Fira Code")
 (setq negev-theme 'doom-one)
@@ -25,7 +26,9 @@
  '(custom-safe-themes
    (quote
     ("6731049cee8f7cbd542d7b3e1c551f3fab716a92119bd7c77f0bd1ef20849fb8" default)))
- '(package-selected-packages (quote (doom-themes yaml-mode go-mode elpy dracula-theme))))
+ '(package-selected-packages
+   (quote
+    (markdown-mode doom-themes yaml-mode go-mode elpy dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
