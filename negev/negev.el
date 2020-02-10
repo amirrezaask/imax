@@ -12,7 +12,7 @@
 
 (defun negev-initialize ()
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-
+  (package-initialize)
   (when (not package-archive-contents) (package-refresh-contents))
   
   (set-face-attribute 'default nil
@@ -25,7 +25,6 @@
   (setq cua-auto-tabify-rectangles nil)
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
-  (package-initialize)
   (install-missing-packages negev-packages)
   (setq make-backup-files nil)
   (setq inhibit-startup-message t)

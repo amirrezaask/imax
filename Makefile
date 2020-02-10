@@ -1,4 +1,5 @@
 sync:
-	cp -r ~/.emacs.d/negev .
-	cp -r ~/.emacs.d/init.el .
-	rm -rf **/*~
+	@cp -r ~/.negev/negev .
+	@cp -r ~/.negev/negev-config.el .
+	@rm -rf **/*~
+

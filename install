@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir -p ${HOME}/.negev/negev
+cp -r ./negev/* ${HOME}/.negev/negev/
+cp -r negev-config.el ${HOME}/.negev/
+printf "#!/bin/bash\nemacs -l ${HOME}/.negev/negev-config.el" > ./negev-bin
+sudo mv ./negev-bin /usr/bin/negev
+sudo chmod +x /usr/bin/negev
