@@ -11,7 +11,7 @@
       my-packages)
   )
 
-(defun gatling-initialize ()
+(defun negev-initialize ()
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 
@@ -27,10 +27,10 @@
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
   
-  (install-missing-packages gatling-packages)
+  (install-missing-packages negev-packages)
   (setq make-backup-files nil)
   (setq inhibit-startup-message t)
-  (load-theme 'dracula t)
+  (load-theme 'doom-dracula t)
   (global-linum-mode t)
   )
-(provide 'gatling)
+(provide 'negev)
