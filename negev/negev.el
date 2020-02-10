@@ -17,7 +17,7 @@
 
   (when (not package-archive-contents) (package-refresh-contents))
   (set-face-attribute 'default nil
-		      :family "Fira Code"
+		      :family negev-font-face
 		      :height 110
 		      :weight 'normal
 		      :width 'normal)
@@ -30,7 +30,7 @@
   (install-missing-packages negev-packages)
   (setq make-backup-files nil)
   (setq inhibit-startup-message t)
-  (load-theme 'doom-dracula t)
+  (load-theme negev-theme t)
   (global-linum-mode t)
   )
 (provide 'negev)

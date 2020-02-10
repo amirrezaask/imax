@@ -4,11 +4,15 @@
 
 
 (setq negev-packages '(
-			 dracula-theme
+		         dracula-theme
 			 yaml-mode
 			 go-mode
 			 doom-themes
 			 ))
+(setq negev-font-face "Fira Code")
+(setq negev-theme 'doom-one)
+
+
 
 (require 'negev)
 
