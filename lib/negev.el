@@ -4,21 +4,23 @@
   (interactive)
   (add-to-list 'load-path (concat user-emacs-directory "/modules")))
   
-
+(defun negev-message (msg)
+  (message (concat ":::::::NEGEV: " msg)))
 (defun setup-modules ()
   (interactive)
   (dolist (module negev-modules)
-    (message (intern "elisp"))
-    (require (intern module))))
-;;(intern (concat "module-" module "-setup"))))
+    (require module)
+          (funcall
+	   (intern (concat "module-" (symbol-name module) "-setup")))))
     
   
 (defun negev-initialize ()
   (setq negev-packages '())
-  
+  (load-modules)
+  (setup-modules)
   (set-face-attribute 'default nil
-		      :family negev-font-face
-		      :height 150
+		      :family negev-font
+		      :height 135
 		      :weight 'normal
 		      :width 'normal)
   

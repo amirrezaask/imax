@@ -17,7 +17,7 @@
   (interactive)
   (elisp--install-packages)
   (add-hook 'elisp-mode-hook 'elisp--setup)
-  (message "[OK] elisp module")
+  (negev-message "elisp module ==> [OK]")
   )
 
 (provide 'elisp)

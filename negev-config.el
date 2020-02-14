@@ -16,7 +16,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "/lib"))
 
 
-(setq negev-font-face "Fira Code")
+(setq negev-font "Fira Code")
 (setq negev-theme 'doom-one)
 
 (setq negev-modules '(
