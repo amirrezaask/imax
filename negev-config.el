@@ -11,24 +11,17 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(setq user-init-file (or load-file-name (buffer-file-name)))
-(setq user-emacs-directory (file-name-directory user-init-file))
+(setq user-emacs-directory (file-name-directory
+			    (or load-file-name (buffer-file-name))))
 (add-to-list 'load-path (concat user-emacs-directory "/lib"))
 
 
-(setq negev-packages '(
-		       paredit
-		       parinfer
-		       dracula-theme
-		       yaml-mode
-		       go-mode
-		       doom-themes
-		       markdown-mode
-			 ))
 (setq negev-font-face "Fira Code")
 (setq negev-theme 'doom-one)
 
-
+(setq negev-modules '(
+		      elisp
+		      ))
 
 (require 'negev)
 
