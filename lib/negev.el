@@ -1,23 +1,9 @@
-(require 'package)
-
-(defun install-missing-packages (my-packages)
-(mapc #'(lambda (package)
-
-          (unless (package-installed-p package)
-
-            (package-install package)))
-
-      my-packages)
-  )
+(require 'pkgmgr)
 
 (defun negev-initialize ()
-  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-  (package-initialize)
-  (when (not package-archive-contents) (package-refresh-contents))
-  
   (set-face-attribute 'default nil
 		      :family negev-font-face
-		      :height 110
+		      :height 150
 		      :weight 'normal
 		      :width 'normal)
   
@@ -25,6 +11,7 @@
   (setq cua-auto-tabify-rectangles nil)
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
+  (pkgmgr-initialize)
   (install-missing-packages negev-packages)
   (setq make-backup-files nil)
   (setq inhibit-startup-message t)
