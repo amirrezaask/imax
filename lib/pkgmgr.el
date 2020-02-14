@@ -12,6 +12,7 @@
 (defun pkgmgr-initialize ()
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
   (setq package-user-dir (concat user-emacs-directory "/packages"))
-
-  (package-initialize))
+  
+  (package-initialize)
+   )
 (provide 'pkgmgr)

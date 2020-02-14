@@ -9,7 +9,7 @@
   (require 'parinfer)
   (require 'rainbow-delimiters)
   (paredit-mode t)
-;;  (parinfer-mode t)
+  (parinfer-mode t)
   (rainbow-delimiters-mode t))
 
 
