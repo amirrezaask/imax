@@ -17,4 +17,4 @@
   (add-hook 'elisp-mode-hook 'elisp--setup))
   
 
-(provide 'elisp)
+(provide 'modules/elisp)

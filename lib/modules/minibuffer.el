@@ -1,13 +1,13 @@
-(defun module-interactive--install-packages ()
+(defun module-minibuffer--install-packages ()
   (pkgmgr-install '(ido-vertical-mode)))
 
-(defun module-interactive-setup ()
+(defun module-minibuffer-setup ()
   (interactive)
-  (module-interactive--install-packages)
+  (module-minibuffer--install-packages)
   (require 'ido)
   (setq ido-enable-flex-matching t)
   (setq ido-everywhere t)
   (ido-mode t)
   (ido-vertical-mode 1))
 
-(provide 'interactive)
+(provide 'modules/minibuffer)

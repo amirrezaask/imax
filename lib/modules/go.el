@@ -19,4 +19,4 @@
   (add-go-path-bin-to-exec-path)
   (add-hook 'go-mode-hook 'module-go-hook)
   )
-(provide 'go)
+(provide 'modules/go)

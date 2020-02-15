@@ -1,5 +1,5 @@
-(require 'pkgmgr)
-(require 'modules)
+(require 'core/pkgmgr)
+(require 'core/modules)
   
 (defun negev-message (msg)
   (message (concat "NEGEV => " msg)))
