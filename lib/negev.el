@@ -2,7 +2,7 @@
 (require 'core/modules)
   
 (defun negev-message (msg)
-  (message (concat "NEGEV => " msg)))
+  (message (concat "# " msg)))
 
   
 (defun negev-initialize ()
@@ -16,7 +16,7 @@
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
   (setq make-backup-files nil)
-  (setq inhibit-startup-message t)
-  )
+  (setq inhibit-startup-message t))
+  
 
 (provide 'negev)

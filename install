@@ -3,6 +3,6 @@ mkdir -p ${HOME}/.negev/negev
 cp -r ./lib/* ${HOME}/.negev/lib/
 cp -r ./modules/* ${HOME}/.negev/modules/
 cp -r negev-config.el ${HOME}/.negev/
-printf "#!/bin/bash\nemacs -q -l ${HOME}/.negev/negev-config.el" > ./negev-bin
+printf "#!/bin/bash\nemacs -q -l -t Negev ${HOME}/.negev/negev-config.el" > ./negev-bin
 sudo mv ./negev-bin /usr/bin/negev
 sudo chmod +x /usr/bin/negev
