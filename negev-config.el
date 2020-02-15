@@ -5,9 +5,9 @@
 
 (setq negev-font "Fira Code")
 (setq negev-theme 'doom-one)
-
-  
-(setq negev-modules '(go elisp font theme minibuffer markdown window))
+(setq debug-on-error 1)
+      
+(setq negev-modules '(go elisp font theme minibuffer markdown window company))
 
 (require 'negev)
 
