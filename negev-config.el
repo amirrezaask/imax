@@ -7,7 +7,7 @@
 (setq negev-theme 'doom-one)
 
   
-(setq negev-modules '(go elisp font theme minibuffer))
+(setq negev-modules '(go elisp font theme minibuffer markdown))
 
 (require 'negev)
 
