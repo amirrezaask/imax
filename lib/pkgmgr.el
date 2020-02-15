@@ -1,6 +1,7 @@
 (require 'package)
 
-(defun install-missing-packages (my-packages)
+(defun pkgmgr-install (my-packages)
+  """installs missing packages from given list"""
 (mapc #'(lambda (package)
 
           (unless (package-installed-p package)

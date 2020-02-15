@@ -1,8 +1,5 @@
 (defun module-go--install-packages ()
-  (package-install 'go-mode)
-  (package-install 'auto-complete)
-  (package-install 'go-autocomplete)
-  )
+  (pkgmgr-install '(go-mode auto-complete go-autocomplete)))
 
 (defun go-path () (getenv "GOPATH"))
 

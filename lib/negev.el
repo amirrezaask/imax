@@ -4,14 +4,10 @@
 (defun negev-message (msg)
   (message (concat "NEGEV => " msg)))
 
-
-(defun add-default-modules ()
-  (add-to-list 'negev-modules 'display))
   
 (defun negev-initialize ()
   (setq negev-packages '())
-
-  (add-default-modules)
+  
   (pkgmgr-initialize)
   
   (modules-setup-modules)
