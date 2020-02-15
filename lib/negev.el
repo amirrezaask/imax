@@ -2,7 +2,7 @@
 (require 'modules)
   
 (defun negev-message (msg)
-  (message (concat "NEGEV=> " msg)))
+  (message (concat "NEGEV => " msg)))
 
 
 (defun add-default-modules ()

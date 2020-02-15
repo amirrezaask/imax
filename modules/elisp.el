@@ -16,7 +16,7 @@
 (defun module-elisp-setup ()
   (interactive)
   (elisp--install-packages)
-  (add-hook 'elisp-mode-hook 'elisp--setup)
-  )
+  (add-hook 'elisp-mode-hook 'elisp--setup))
+  
 
 (provide 'elisp)
