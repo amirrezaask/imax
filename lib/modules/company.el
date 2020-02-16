@@ -3,7 +3,9 @@
 
 (defun module-company-setup ()
   (module-company--install)
-  (global-company-mode t))
-;;  (add-to-list 'company-backends '(company-capf company-dabbrev)))
+  (setq company-tooltip-limit 30)                      ; bigger popup window
+  (setq company-idle-delay .1)                         ; decrease delay before autocompletion popup shows
+  (setq company-echo-delay 0)
+  (global-company-mode))
 (provide 'modules/company)
   
