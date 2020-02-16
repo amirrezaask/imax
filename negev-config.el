@@ -7,7 +7,7 @@
 (setq negev-theme 'doom-one)
 (setq debug-on-error 1)
       
-(setq negev-modules '(go elisp python php font theme minibuffer markdown window company))
+(setq negev-modules '(font theme minibuffer window company go elisp json python php yaml markdown ))
 
 (require 'negev)
 

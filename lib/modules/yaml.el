@@ -1,0 +1,6 @@
+(defun module-yaml--install-packages ()
+  (pkgmgr-install '(yaml-mode)))
+(defun module-yaml-setup ()
+  (module-yaml--install-packages)
+  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
+(provide 'modules/yaml)

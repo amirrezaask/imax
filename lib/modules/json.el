@@ -1,0 +1,5 @@
+(defun module-json--install-packages ()
+  (pkgmgr-install '(json-mode)))
+(defun module-json-setup ()
+  (module-json--install-packages))
+(provide 'modules/json)
