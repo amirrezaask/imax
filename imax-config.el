@@ -7,7 +7,19 @@
 (setq imax-theme 'doom-one)
 (setq debug-on-error 1)
       
-(setq imax-modules '(font theme minibuffer window company go elisp python json php yaml markdown))
+(setq imax-modules '(font
+		     theme
+		     minibuffer
+		     window
+		     company
+		     git
+		     go
+		     elisp
+		     python
+		     json
+		     ;; php
+		     yaml
+		     markdown))
 
 (require 'imax)
 
