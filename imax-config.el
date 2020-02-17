@@ -13,6 +13,7 @@
 		     window
 		     company
 		     git
+		     ansible
 		     go
 		     elisp
 		     python
