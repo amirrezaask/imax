@@ -1,5 +1,5 @@
 sync:
-	@cp -r ~/.negev/lib .
-	@cp -r ~/.negev/negev-config.el .
+	@cp -r ~/.imax/lib .
+	@cp -r ~/.imax/imax-config.el .
 	@rm -rf **/*~
 

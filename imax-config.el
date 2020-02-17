@@ -3,12 +3,12 @@
 (add-to-list 'load-path (concat user-emacs-directory "/lib"))
 
 
-(setq negev-font "Fira Code")
-(setq negev-theme 'doom-one)
+(setq imax-font "Fira Code")
+(setq imax-theme 'doom-one)
 (setq debug-on-error 1)
       
-(setq negev-modules '(font theme minibuffer window company go elisp python json php yaml markdown))
+(setq imax-modules '(font theme minibuffer window company go elisp python json php yaml markdown))
 
-(require 'negev)
+(require 'imax)
 
-(negev-initialize)
+(imax-initialize)

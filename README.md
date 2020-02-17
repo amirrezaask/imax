@@ -1,6 +1,10 @@
-# negev
+# imax
 
-Negev is an Emacs based IDE.
+imax is an Emacs based IDE.
 
 # Modules
-Every thing in negev is based on the idea of modules. Modules provide every thing from extending the functionality to a simple font face selecting.
+Every thing in imax is based on the idea of modules. Modules provide every thing from extending the functionality to a simple font face selecting.
+
+
+# License
+imax released under GPL-v3

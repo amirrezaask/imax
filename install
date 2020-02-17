@@ -1,7 +1,7 @@
 #!/bin/bash
-mkdir -p ${HOME}/.negev/lib
-cp -r ./lib/* ${HOME}/.negev/lib/
-cp -r negev-config.el ${HOME}/.negev/
-printf "#!/bin/bash\nemacs -q -l ${HOME}/.negev/negev-config.el &" > ./negev-bin
-sudo mv ./negev-bin /usr/bin/negev
-sudo chmod +x /usr/bin/negev
+mkdir -p ${HOME}/.imax/lib
+cp -r ./lib/* ${HOME}/.imax/lib/
+cp -r imax-config.el ${HOME}/.imax/
+printf "#!/bin/bash\nemacs --title=imax -q -l ${HOME}/.imax/imax-config.el &" > ./imax-bin
+sudo mv ./imax-bin /usr/bin/imax
+sudo chmod +x /usr/bin/imax

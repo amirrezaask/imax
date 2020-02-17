@@ -1,12 +1,11 @@
 (require 'core/pkgmgr)
 (require 'core/modules)
   
-(defun negev-message (msg)
+(defun imax-message (msg)
   (message (concat "# " msg)))
 
   
-(defun negev-initialize ()
-  (setq negev-packages '())
+(defun imax-initialize ()
   
   (pkgmgr-initialize)
   
@@ -19,4 +18,4 @@
   (setq inhibit-startup-message t))
   
 
-(provide 'negev)
+(provide 'imax)

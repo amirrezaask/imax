@@ -4,7 +4,7 @@
 
 (defun module-theme-setup ()
   (module-theme--install-packages)
-  (load-theme negev-theme  t)
+  (load-theme imax-theme  t)
   )
 
 (provide 'modules/theme)
