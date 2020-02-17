@@ -14,8 +14,7 @@
   (setq cua-auto-tabify-rectangles nil)
   (transient-mark-mode 1)
   (setq cua-keep-region-after-copy t)
-  (setq make-backup-files nil)
-  (setq inhibit-startup-message t))
+  (setq make-backup-files nil))
   
 
 (provide 'imax)

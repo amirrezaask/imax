@@ -1,7 +1,7 @@
 (defun modules-load-modules ()
   (interactive)
+  ;; (add-to-list 'load-path user-modules)
   (add-to-list 'load-path (concat user-emacs-directory "/modules")))
-;; if user has defined user-modules we need to load them as well
 (defun modules-setup-modules ()
   (interactive)
   (modules-load-modules)

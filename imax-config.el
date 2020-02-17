@@ -11,6 +11,7 @@
 		     ;; core imax modules
 		     font
 		     theme
+		     modeline
 		     minibuffer
 		     window
 		     company
