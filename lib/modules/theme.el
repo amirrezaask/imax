@@ -1,5 +1,5 @@
 (defun module-theme--install-packages ()
-  (pkgmgr-install '(doom-thems)))
+  (pkgmgr-install '(doom-themes)))
 
 
 (defun module-theme-setup ()
