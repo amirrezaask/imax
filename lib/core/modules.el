@@ -1,15 +1,16 @@
 (defun modules-load-modules ()
   (interactive)
   (add-to-list 'load-path (concat user-emacs-directory "/modules")))
+;; if user has defined user-modules we need to load them as well
 (defun modules-setup-modules ()
   (interactive)
   (modules-load-modules)
   (dolist (module imax-modules)
     (require (intern (concat "modules/" (symbol-name module))))
-          (funcall
-	   (intern (concat "module-" (symbol-name module) "-setup"))
-	   )
-	  (imax-message (concat "Module " (symbol-name module) " has been loaded into imax")
-	  )
-  ))
+    (funcall
+     (intern (concat "module-" (symbol-name module) "-setup"))
+     )
+    (imax-message (concat "Module " (symbol-name module) " has been loaded into imax")
+		  )
+    ))
 (provide 'core/modules)

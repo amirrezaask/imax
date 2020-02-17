@@ -4,23 +4,34 @@
 
 
 (setq imax-font "Fira Code")
-(setq imax-theme 'doom-one)
+(setq imax-theme 'dracula)
 (setq debug-on-error 1)
       
-(setq imax-modules '(font
+(setq imax-modules '(
+		     ;; core imax modules
+		     font
 		     theme
 		     minibuffer
 		     window
 		     company
+
+		     ;; version control 
 		     git
-		     ansible
+
+		     ;; languages support
 		     go
 		     elisp
 		     python
-		     json
-		     ;; php
+		     php
+		     markdown
 		     yaml
-		     markdown))
+		     json
+
+		     ;; devops support 
+		     k8s
+		     ansible
+		     docker
+		     ))
 
 (require 'imax)
 

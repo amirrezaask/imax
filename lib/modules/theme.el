@@ -1,5 +1,5 @@
 (defun module-theme--install-packages ()
-  (pkgmgr-install '(doom-themes)))
+  (pkgmgr-install '(doom-themes dracula-theme)))
 
 
 (defun module-theme-setup ()
