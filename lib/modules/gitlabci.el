@@ -1,5 +1,5 @@
 (defun module-gitlabci--install-packages ()
-  (pkgmgr-install '(gitlab-ci-mode )))
+  (pkgmgr-install '(gitlab-ci-mode)))
 
 (defun module-gitlabci-hook ()
   (message "hook kalled")
