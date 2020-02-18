@@ -15,7 +15,7 @@
 		     minibuffer
 		     window
 		     company
-
+		     lsp
 		     ;; version control 
 		     git
 
