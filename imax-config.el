@@ -5,7 +5,7 @@
 
 (setq imax-font "Fira Code")
 (setq imax-theme 'dracula)
-(setq debug-on-error 1)
+(setq debug-on-error 0)
       
 (setq imax-modules '(
 		     ;; core imax modules
