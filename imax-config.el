@@ -32,6 +32,7 @@
 		     k8s
 		     ansible
 		     docker
+		     gitlabci
 		     ))
 
 (require 'imax)
