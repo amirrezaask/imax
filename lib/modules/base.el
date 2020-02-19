@@ -23,7 +23,12 @@
   (menu-bar-mode 0)
   (global-linum-mode t) 
   (setq inhibit-startup-message t)
-  (load-theme imax-theme  t))  
+  (load-theme imax-theme  t)
+  (cua-mode t)
+  (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+  (transient-mark-mode 1) ;; No region when it is not highlighted
+  (setq cua-keep-region-after-copy t)) ;; Standard Windows behaviour
+
 
 
 
