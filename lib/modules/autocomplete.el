@@ -1,8 +1,8 @@
-(defun module-company--install ()
+(defun module-autocomplete--install ()
   (pkgmgr-install '(company)))
 
-(defun module-company-setup ()
-  (module-company--install)
+(defun module-autocomplete-setup ()
+  (module-autocomplete--install)
   (setq company-tooltip-limit 30)                      ; bigger popup window
 
 
@@ -11,6 +11,6 @@
 
   (setq company-echo-delay 0)
   (global-company-mode))
-(provide 'modules/company)
+(provide 'modules/autocomplete)
   
   

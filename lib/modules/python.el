@@ -4,7 +4,6 @@
 (defun module-python-setup ()
   (require 'py-autopep8)
 
-  (add-hook 'elpy-mode-hook 'flycheck-mode)
   (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
   (add-hook 'python-mode-hook #'lsp))

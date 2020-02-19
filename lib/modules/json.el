@@ -1,5 +1,6 @@
 (defun module-json--install-packages ()
   (pkgmgr-install '(json-mode)))
 (defun module-json-setup ()
-  (module-json--install-packages))
+  (module-json--install-packages)
+  (add-hook 'before-save-hook 'json-mode-beautify))
 (provide 'modules/json)

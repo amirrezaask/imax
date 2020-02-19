@@ -1,5 +1,6 @@
+
 (defun module-go--install-packages ()
-  (pkgmgr-install '(go-mode go-add-tags go-stacktracer go-eldoc company company-go flycheck gotest)))
+  (pkgmgr-install '(go-mode go-add-tags go-stacktracer go-eldoc company company-go gotest)))
 
 (defun go-path () (getenv "GOPATH"))
 
@@ -8,6 +9,7 @@
 
 (defun module-go-hook ()
   (lsp)
+  (flymake-mode-on)
   (yas-minor-mode-on)
   (add-hook 'before-save-hook #'lsp-format-buffer t t)
   (add-hook 'before-save-hook #'lsp-organize-imports t t)
