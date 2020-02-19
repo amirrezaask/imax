@@ -1,5 +1,5 @@
 (defun module-autocomplete--install ()
-  (pkgmgr-install '(company)))
+  (pkgmgr-install '(company yasnippet yasnippet-snippets)))
 
 (defun module-autocomplete-setup ()
   (module-autocomplete--install)

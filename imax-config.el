@@ -4,16 +4,13 @@
 
 
 (setq imax-font "Hack")
+(setq imax-font-size 12)
 (setq imax-theme 'doom-dracula)
 (setq debug-on-error 0)
       
 (setq imax-modules '(
 		     ;; core imax modules
-		     font
-		     theme
-		     modeline
-		     minibuffer
-		     window
+		     base
 		     autocomplete
 		     language-server-protocol
 		     ;; version control 
