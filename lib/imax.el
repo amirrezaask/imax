@@ -8,7 +8,7 @@
 (defun imax-initialize ()
   
   (pkgmgr-initialize)
-  
+  (add-to-list 'imax-modules 'base)
   (modules-setup-modules)
   
   (setq cua-auto-tabify-rectangles nil)

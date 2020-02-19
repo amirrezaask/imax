@@ -10,7 +10,6 @@
       
 (setq imax-modules '(
 		     ;; core imax modules
-		     base
 		     autocomplete
 		     language-server-protocol
 		     ;; version control 
