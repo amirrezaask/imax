@@ -6,10 +6,11 @@
 
 (defun imax/initialize ()
   (modules-setup-modules))
+
 (defun imax/-initialize ()
   (pkgmgr-initialize)
-  (add-to-list 'imax-modules 'base)
-  (modules-require-modules))
+  (modules-require-modules)
+  (imax/activate-modules 'base))
     
 (imax/-initialize)
 (provide 'imax)
