@@ -1,6 +1,14 @@
 (defun module-base--install-packages ()
     (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme)))
 
+(setq imax/font "Hack")
+(setq imax/font-size 11)
+(setq imax/theme 'doom-dracula)
+
+(defun imax/font (font) (setq 'imax/font font))
+(defun imax/font-size (size) (setq 'imax/font-size size))
+(defun imax/theme (theme) (setq 'imax/theme theme))
+
 
 (defun module-base-setup ()
   (module-base--install-packages)
