@@ -26,6 +26,7 @@
          :width 'normal)
 (cua-mode t)
 (setq make-backup-files 0)
+(setq create-lockfiles nil)
 (setq cua-auto-tabify-rectangles nil)
 (transient-mark-mode 1) 
 (setq cua-keep-region-after-copy t)
@@ -41,7 +42,7 @@
    "ff" 'find-file
    "sv" 'split-window-vertically
    "sh" 'split-window-horizontally
-   
+   "wc" '
    ))
 
 (use-package dashboard
