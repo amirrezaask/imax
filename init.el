@@ -7,7 +7,7 @@
 
 (require 'imax)
 
-(imax/misc-packages 'cyberpunk-theme ) ;; install only the package in case you don't need a module for that like thems
+(imax/misc-packages 'cyberpunk-theme) ;; install only the package in case you don't need a module for that like thems
 
 (imax/font "Hack") ;; sets font of imax
 (imax/font-size 12) ;; font size
