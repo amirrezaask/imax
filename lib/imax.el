@@ -5,12 +5,13 @@
   (message (concat "# " msg)))
 
 (defun imax/initialize ()
+  (imax/activate-modules 'base)
   (modules-setup-modules))
 
 (defun imax/-initialize ()
   (pkgmgr-initialize)
-  (modules-require-modules)
-  (imax/activate-modules 'base))
-    
+  (modules-require-modules))
+
+
 (imax/-initialize)
 (provide 'imax)
