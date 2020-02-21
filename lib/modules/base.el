@@ -1,5 +1,5 @@
 (defun module-base--install-packages ()
-  (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme spacemacs-theme centaur-tabs)))
+  (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme spacemacs-theme centaur-tabs helm)))
 
 
 (setq imax/font "Hack")
@@ -9,6 +9,12 @@
 (defun imax/font (font) (setq imax/font font))
 (defun imax/font-size (size) (setq imax/font-size size))
 (defun imax/theme (theme) (setq imax/theme theme))
+
+(defun --helm-setup ()
+  (global-set-key (kbd "C-x C-f") 'helm-find-files)
+  (global-set-key (kbd "M-x") 'helm-M-x)
+  (global-set-key (kbd "C-x b") 'helm-buffer-list))
+
 (defun --tabs-setup ()
   (centaur-tabs-mode t)
   (global-set-key (kbd "C-.")  'centaur-tabs-backward)
@@ -37,6 +43,7 @@
   (menu-bar-mode 0)
   (global-linum-mode t) 
   (setq inhibit-startup-message t)
+  (--helm-setup)
   (load-theme imax/theme  t)
   (cua-mode t)
 ;;  (--tabs-setup)

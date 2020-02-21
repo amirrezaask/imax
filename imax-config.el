@@ -13,6 +13,7 @@
 
 (imax/activate-modules
  ;; ide like features of imax
+ 'keybindings
  'editor
  'syntax
  'autocomplete
