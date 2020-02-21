@@ -1,3 +1,4 @@
+
 (setq modules-path (concat user-emacs-directory "lib/modules"))
 (defvar imax-modules '() "list of modules which imax setups") 
 
@@ -13,11 +14,9 @@
   (dolist (module imax-modules)
     (funcall
      (intern (concat "module-" (symbol-name module) "-setup")))))
+
 (defun modules-require-modules ()
   (interactive)
-;;  (modules-load-modules)
   (dolist (module (list-of-all-modules))
-    (require (intern (concat "modules/" module)))
-    (imax-message (concat "Module " module " has been loaded into imax"))))
-
+    (require (intern (concat "modules/" module)))))
 (provide 'core/modules)

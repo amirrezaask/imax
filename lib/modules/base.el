@@ -1,5 +1,5 @@
 (defun module-base--install-packages ()
-    (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme)))
+  (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme spacemacs-theme centaur-tabs)))
 
 
 (setq imax/font "Hack")
@@ -9,7 +9,13 @@
 (defun imax/font (font) (setq imax/font font))
 (defun imax/font-size (size) (setq imax/font-size size))
 (defun imax/theme (theme) (setq imax/theme theme))
-
+(defun --tabs-setup ()
+  (centaur-tabs-mode t)
+  (global-set-key (kbd "C-.")  'centaur-tabs-backward)
+  (global-set-key (kbd "C-,") 'centaur-tabs-forward)
+  (setq centaur-tabs-style "bar")
+  (setq centaur-tabs-height 42)
+  (setq centaur-tabs-set-icons t))
 
 (defun module-base-setup ()
   (module-base--install-packages)
@@ -21,10 +27,9 @@
   (require 'ido)
   (setq ido-enable-flex-matching t)
   (setq ido-everywhere t)
-  
   (ido-mode t)
   (ido-vertical-mode 1)
-  (ido-ubiquitous-mode 1)
+  ;; (ido-ubiquitous-mode 1)
   (require 'doom-modeline)
   (doom-modeline-mode 1)
   (tool-bar-mode 0)
@@ -34,9 +39,11 @@
   (setq inhibit-startup-message t)
   (load-theme imax/theme  t)
   (cua-mode t)
+;;  (--tabs-setup)
   (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
   (transient-mark-mode 1) ;; No region when it is not highlighted
   (setq cua-keep-region-after-copy t)) ;; Standard Windows behaviour
+
 
 
 
