@@ -1,36 +1,32 @@
+(require 'package)
 
-(setq user-emacs-directory (file-name-directory (or load-file-name (buffer-file-name))))
-(add-to-list 'load-path (concat user-emacs-directory "/lib"))
-(setq custom-file (concat user-emacs-directory "/.custom.el"))
+(setq package-enable-at-startup nil)
 
-(require 'imax)
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")))
 
-(imax/misc-packages 'cyberpunk-theme) ;; install only the package in case you don't need a module for that like thems
+(package-initialize)
 
-(imax/font "Hack") ;; sets font of imax
-(imax/font-size 12) ;; font size
-(imax/theme 'spacemacs-dark)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(imax/activate-modules
- ;; ide like features of imax
- 'keybindings
- 'editor
- 'syntax
- 'autocomplete
- 'language-server-protocol
- 'git
- ;; lanugages that imax supports currently
- 'clojure
- 'go
- 'elisp
- 'python
- 'php
- 'markdown
- 'yaml
- 'json
- 'javascript
- ;; enable devops features of imax
- 'devops)
- 
-           
-(imax/initialize)
+(require 'use-package) 
+
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+(menu-bar-mode 0)
+(global-linum-mode t)
+
+(use-package doom-modeline :ensure t :config (doom-modeline-mode 1))
+(use-package dracula-theme :ensure t)
+(use-package spacemacs-theme :ensure t)
+(use-package ido-vertical-mode :ensure t :config
+  (lambda ()
+    (require 'ido)
+    (setq ido-enable-flex-matching t)
+    (setq ido-everywhere t)
+    (ido-mode t)
+    (ido-vertical-mode t))))
+
+
+
