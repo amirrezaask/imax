@@ -1,9 +1,7 @@
 
 (setq user-emacs-directory (file-name-directory (or load-file-name (buffer-file-name))))
 (add-to-list 'load-path (concat user-emacs-directory "/lib"))
-
-
-(setq debug-on-error 1)
+(setq custom-file (concat user-emacs-directory "/.custom.el"))
 
 (require 'imax)
 

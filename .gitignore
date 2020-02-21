@@ -2,3 +2,6 @@ packages
 elpa
 **/*~
 #**#
+.custom.el
+**elc
+transient

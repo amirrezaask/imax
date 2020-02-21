@@ -1,5 +1,5 @@
 (defun module-base--install-packages ()
-  (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline doom-themes dracula-theme spacemacs-theme centaur-tabs helm)))
+  (pkgmgr-install '(ido-vertical-mode ido-completing-read+ doom-modeline dracula-theme spacemacs-theme centaur-tabs helm)))
 
 
 (setq imax/font "Hack")
