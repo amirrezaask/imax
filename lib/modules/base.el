@@ -10,10 +10,12 @@
 (defun imax/font-size (size) (setq imax/font-size size))
 (defun imax/theme (theme) (setq imax/theme theme))
 
+
+
 (defun --helm-setup ()
   (global-set-key (kbd "C-x C-f") 'helm-find-files)
   (global-set-key (kbd "M-x") 'helm-M-x)
-  (global-set-key (kbd "C-x b") 'helm-buffer-list))
+  (global-set-key (kbd "C-x b") 'helm-buffers-list))
 
 (defun --tabs-setup ()
   (centaur-tabs-mode t)

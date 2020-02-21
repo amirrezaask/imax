@@ -2,7 +2,9 @@
 (setq user-emacs-directory (file-name-directory (or load-file-name (buffer-file-name))))
 (add-to-list 'load-path (concat user-emacs-directory "/lib"))
 
+
 (setq debug-on-error 1)
+
 (require 'imax)
 
 (imax/misc-packages 'cyberpunk-theme ) ;; install only the package in case you don't need a module for that like thems
