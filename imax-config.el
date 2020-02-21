@@ -4,9 +4,11 @@
 (setq debug-on-error 1)
 (require 'imax)
 
-(imax/font "Hack")
-(imax/font-size 12)
-(imax/theme 'doom-dracula)
+(imax/misc-packages 'cyberpunk-theme 'spacemacs-theme) ;; install only the package in case you don't need a module for that like thems
+
+(imax/font "Hack") ;; sets font of imax
+(imax/font-size 12) ;; font size
+(imax/theme 'spacemacs-dark)
 
 (imax/activate-modules 'autocomplete
 		       'language-server-protocol
@@ -23,7 +25,5 @@
 		       'docker
 		       'gitlabci
 		       )
- 
-
 
 (imax/initialize)
