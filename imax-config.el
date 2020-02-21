@@ -10,20 +10,21 @@
 (imax/font-size 12) ;; font size
 (imax/theme 'spacemacs-dark)
 
-(imax/activate-modules 'autocomplete
-		       'language-server-protocol
-		       'git
-		       'go
-		       'elisp
-		       'python
-		       'php
-		       'markdown
-		       'yaml
-		       'json
-		       'k8s
-		       'ansible
-		       'docker
-		       'gitlabci
-		       )
+(imax/activate-modules
+ ;; ide like features of imax
+ 'autocomplete
+ 'language-server-protocol
+ 'git
+ ;; lanugages that imax supports currently
+ 'go
+ 'elisp
+ 'python
+ 'php
+ 'markdown
+ 'yaml
+ 'json
+ ;; enable devops features of imax
+ 'devops)
+           
 
 (imax/initialize)
