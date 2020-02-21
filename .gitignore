@@ -5,3 +5,6 @@ elpa
 .custom.el
 **elc
 transient
+.lsp-*
+ido*
+recentf
